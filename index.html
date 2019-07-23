@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/game.css">
 
@@ -53,15 +52,15 @@
     	</div>
 		
 		<div id="win-message" class="d-none">
-			<!-- TODO: можно добавить красные квадратики с отрицательным весом 
-				и делать счёт попаданий в конце как разницу очков за попадание минус штрафные -->
-        	<h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд</h2>
+			<h2>Вы нашли 10 зелёных квадратов за <span id="total-time-played"></span> секунд.</h2>
+			<h2>Ваш счет: <span id="total-count"></span> (промахов: <span id="total-fails">0</span>)</h2>
+			
 		</div>
 		<button id="button-reload" class="btn btn-primary">Играть заново</button>  
 	</div>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/utils.js"></script>
     <script src="./js/game.js"></script>
   </body>

@@ -57,21 +57,19 @@ function handleClick(event) {
     click.play();
     round();
   // промах, исключая щелчок на самой сетке
-  } else {
-      if (slot.hasClass('grid-item')) {
+  } else if (slot.hasClass('grid-item')) {
         slot.addClass('miss');
         fails ++;
-        fail.play()
+        fail.play();
+        // round();
     }
   }
-}
 
 function init() {
-  $('#button-reload').click(function() {
-    hits = 0;
-    fails = 0;
     round();
     $('.game-field').click(handleClick);
+    $('#button-reload').click(function() {
+      location.reload();
   });
 }
 

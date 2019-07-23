@@ -1,0 +1,30 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  grid-template-rows: repeat(6, 10vh);
+  grid-gap: 3px;
+  margin-bottom: 10px;
+}
+
+.grid-item {
+  box-sizing: border-box;
+  min-width: 160px;
+  min-height: 10vh;
+  line-height: 10vh; 
+  background: orange;
+}
+button {
+  width: 200px;
+  height: 50px;
+}
+
+.target {
+  background-color: green;
+  color: white;
+  font-size: 24pt;
+  text-align: center;
+}
+
+.miss {
+  background-color: red;
+}
